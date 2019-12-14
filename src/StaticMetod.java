@@ -1,6 +1,6 @@
 public class StaticMetod {
     public static void main(String[] args) {
-        B b = new B();
+        B b = new B(); // nowa instancja obiektu B
         b.print(); //Tożsame z wywyołeniem B.print() - metoda statyczna;
 
         A a = b; //tworzenie zmiennej typu a;
