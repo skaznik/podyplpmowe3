@@ -40,7 +40,7 @@ public class zadanie {
     }
 
     public static void main(String[] args) {
-        new A();
+        new C();
     new B(true);
         new C(false);
 
