@@ -9,5 +9,16 @@ public class Vars {
     public static void main(String[] args) {
         int i = 77; //zmienna lokalna
         Vars v = new Vars();  //zmienna lokalna
+        v.i = 9;
+        System.out.println("Wyświetlamy zmienną egzemplarza dla v : "+v.i);
+        Vars vv = new Vars();
+        vv.i = 5;
+        System.out.println("Wyświetlamy zmienną egzemparza dla vv : "+vv.i);
+        System.out.println("Wyświetlamy zmienną klasową : "+j);
+        System.out.println("Wyświetlamy zmienną lokalną : "+i);
+    }
+
+    void show() {
+        System.out.println("-----------------------------");
     }
 }
