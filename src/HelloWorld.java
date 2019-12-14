@@ -4,4 +4,4 @@ public class HelloWorld {
     }
 }
 
-class A extends HelloWorld{}
+// class A extends HelloWorld{}

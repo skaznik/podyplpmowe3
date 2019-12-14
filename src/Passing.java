@@ -17,8 +17,9 @@ public class Passing {
     }
     static void changeIt(Point p) {
         p = new Point(4,4);
-        System.out.println("Zmieniam to na co wskazuje p");
+        System.out.println("p (lokalne) wskazuje  na " + p);
         p.x++;
         p.y++;
+        System.out.println("Po zmianie p (lokalne) wskazuje  na " + p);
     }
 }
