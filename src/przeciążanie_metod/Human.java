@@ -1,8 +1,8 @@
 package przeciążanie_metod;
 
 public class Human {
-    String a = "chleb";
+    String a = "piwo";
     void eat() {
-        System.out.println(" Jem " + a);
+        System.out.println(" Jestem dorosły i piję " + a);
     }
 }
