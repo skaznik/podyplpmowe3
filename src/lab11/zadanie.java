@@ -41,7 +41,7 @@ public class zadanie {
 
     public static void main(String[] args) {
         new C();
-    new B(true);
+        new B(true);
         new C(false);
 
 
