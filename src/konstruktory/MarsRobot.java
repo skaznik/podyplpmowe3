@@ -10,6 +10,8 @@ public class MarsRobot {
         this.speed = speed;
         this.power = power;
     }
+    MarsRobot() {} //konstruktor domyśłny - bezargumentowy
+
     public static void main(String[] args) {
         MarsRobot marsRobot = new MarsRobot("Exploracja", 3, 20);
     }
