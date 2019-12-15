@@ -12,6 +12,7 @@ public class Test {
         System.out.println(point);
 
         Employee employee = new Employee("Kowalski", 34, 4500);
-        System.out.println(employee);
+        Employee employee1 = new Employee("Kowalski", 20, 2000);
+        System.out.println(employee.equals(employee1));
     }
 }

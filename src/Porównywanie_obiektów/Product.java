@@ -10,7 +10,7 @@ public class Product {
         this.name = name;
         this.price = price;
     }
-
+//autogenerowanie toString (przysłonięcie metody) "alt+insert"
     @Override
     public String toString() {
         return "Product{" +
@@ -18,7 +18,7 @@ public class Product {
                 ", price=" + price +
                 '}';
     }
-
+ ///autogenerowanie eqals (przysłonięcie metody) "alt+insert"
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
