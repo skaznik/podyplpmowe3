@@ -7,6 +7,8 @@ public class Tester {
         A b = new A();
         b.setNumber1(30); // brak dostępu z uwagi na private
         System.out.println(a.number);
+        Rectangle r = new Rectangle(2,4);
+        System.out.println("Pole powierzchni prostokąta : " + r.getArea());
     }
 
 }
