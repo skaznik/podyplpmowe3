@@ -7,6 +7,7 @@ public class Cat extends Animal {
     public Cat() {
         licz++;
     }
+
     @Override
     public String getType() {
         return type;
