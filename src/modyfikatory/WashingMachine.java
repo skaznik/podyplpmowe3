@@ -17,10 +17,5 @@ public class WashingMachine {
         System.out.println("Temperatura : " + this.temperature + " , obroty : " + this.spinning);
     }
 
-    public static void main(String[] args) {
-        WashingMachine washingMachine = new WashingMachine();
-        washingMachine.modeForSensitiveClouthes();
-        washingMachine.showSetting();
 
-    }
 }
