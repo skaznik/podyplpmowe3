@@ -1,5 +1,8 @@
 package pl.edu.wszib.podyplomowe;
 
+import java.awt.*;
+
+
 public class Test {
     public static void main(String[] args) {
         System.out.println("Pakiet: " + Test.class.getPackage());   //pobieranie nazwy pakietu z clasy (this. nie działa);
