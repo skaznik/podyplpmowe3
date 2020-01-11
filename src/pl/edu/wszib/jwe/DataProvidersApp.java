@@ -14,5 +14,9 @@ public class DataProvidersApp {
         DataPresenter dataPresenter = new DataPresenter();
         dataPresenter.showData(dataProvider2);
 
+        DataProvider dataProvider3 = new FileDataProvider();
+        DataPresenter dataPresenter1 = new DataPresenter();
+        dataPresenter1.showData(dataProvider3);
+
     }
 }
