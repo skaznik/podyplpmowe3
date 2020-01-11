@@ -3,7 +3,7 @@ package lab15;
 public  class Mp3 extends MusicPlayer {
     @Override
     public String play() {
-        System.out.println("Gram z MP3 : " +);
+        System.out.println("Gram z MP3 : ");
         return super.play();
     }
 
