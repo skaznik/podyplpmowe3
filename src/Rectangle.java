@@ -14,7 +14,6 @@ public class Rectangle {
         this.dlugosc = dlugosc;
         this.szerokosc = szerokosc;
     }
-    
 
     public static void main(String[] args) {
         Rectangle rectangle = new Rectangle();
@@ -23,5 +22,7 @@ public class Rectangle {
         System.out.println(rectangle);
         System.out.println(rectangle1);
         System.out.println(rectangle2);
+        //System.out.println(pole(5,6));
+        //System.out.println(pole(5));
     }
 }
