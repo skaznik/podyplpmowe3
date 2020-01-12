@@ -13,7 +13,12 @@ public class Tshirt {
         Tshirt tshirt = new Tshirt(TshirtSize.L, "Polex");
         Tshirt tshirt1 = new Tshirt(TshirtSize.S, "Polex");
         Tshirt tshirt2 = new Tshirt(TshirtSize.XL, "Adidas");
-        System.out.println(tshirt.size.getChestWidth());
+        System.out.println(tshirt.getTshirtSizeDetails());
+        System.out.println(tshirt1.getTshirtSizeDetails());
+        System.out.println(tshirt2.getTshirtSizeDetails());
 
+    }
+    public String getTshirtSizeDetails() {
+        return size + "(" + size.getChestWidth()+ " "+ size.getShirtLenght()+ " "+ size.getSleeveLenght()+" "+manufacturer+")";
     }
 }
