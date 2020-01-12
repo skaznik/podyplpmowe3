@@ -6,12 +6,14 @@ import com.sun.jdi.PathSearchingVirtualMachine;
 
 import java.math.BigDecimal;
 import java.sql.*;
+import java.text.NumberFormat;
+import java.util.Arrays;
 
 public class HomeBudget {
     private static final String DB_HOST = "morfeusz.wszib.edu.pl";
     private static final int DB_PORT = 1433;
     private static final String DB_USER = "skaznik";
-    private static final String DB_PASS = "************";
+    private static final String DB_PASS = "*************;
     private static final String DB_NAME = "skaznik";
 
     public static final String INSERT_ENTRY_SQL ="INSERT INTO budget.BudgetEntries (EntryName, Amount) VALUES (?, ?)";
@@ -29,7 +31,16 @@ public class HomeBudget {
             ps.setString(1, be.getEntryName());
             ps.setBigDecimal(2, be.getAmount());
             ps.execute();
-
+            BigDecimal balance;
+            ResultSet rs = stmt.executeQuery(GET_SUM_SQL);
+            if (rs.next()) {
+                balance = rs.getBigDecimal("suma");
+            } else {
+                balance = new BigDecimal(0);
+            }
+            System.out.print("Zapisano kwotę: " + currencyFormat(be.getAmount()));
+            System.out.print(", nazwa: " + be.getEntryName());
+            System.out.print(", saldo : " + currencyFormat(balance));
         } catch (SQLException e) {
             System.out.println("Błąd : " + e.getMessage());
         }
@@ -44,6 +55,9 @@ public class HomeBudget {
         ds.setPortNumber(DB_PORT);
         return ds.getConnection();
 
+    }
+    private static String currencyFormat(BigDecimal n) {
+        return NumberFormat.getCurrencyInstance().format(n);
     }
 
 }
